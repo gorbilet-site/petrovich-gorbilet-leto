@@ -1,6 +1,12 @@
-# Petrovich × Gorbilet Summer Contest Layout
+# Petrovich x Gorbilet Summer Contest
 
-Static HTML layout exported from the Claude artifact for the contest landing page
-«Где лето лучше: в городе или на даче?».
+Static demo landing page for the contest "Где лето лучше: в городе или на даче?".
 
-Open `index.html` in a browser or publish the repository with GitHub Pages.
+The page includes:
+- a poster-style first screen with real brand logos;
+- city and dacha photo cards;
+- an animated marquee;
+- a participant board preview;
+- prize and participation blocks.
+
+Published with GitHub Pages.
