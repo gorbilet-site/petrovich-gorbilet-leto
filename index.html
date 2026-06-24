@@ -238,11 +238,16 @@
       display: inline-block;
       color: #ff3f43;
       font-family: "Caveat", "Comic Sans MS", cursive;
-      font-size: 0.82em;
+      font-size: 1.22em;
       font-weight: 700;
-      line-height: 0.7;
-      transform: rotate(-3deg) translateY(0.04em);
+      line-height: 0.76;
+      transform: rotate(-3deg) translateY(-0.02em);
       text-transform: lowercase;
+    }
+
+    .title-script {
+      margin: 0.04em 0 -0.02em;
+      line-height: 0.76;
     }
 
     .lead {
@@ -299,14 +304,14 @@
 
     .visual {
       position: relative;
-      min-height: 472px;
+      min-height: 520px;
       min-width: 0;
     }
 
     .photo-stack {
       position: absolute;
-      inset: 18px 0 auto 0;
-      height: 360px;
+      inset: 0 0 auto 0;
+      height: 470px;
     }
 
     .photo-card {
@@ -340,20 +345,22 @@
     }
 
     .photo-card.city {
-      left: 12px;
-      top: 70px;
-      width: 214px;
-      height: 284px;
-      transform: rotate(-8deg);
+      left: 2%;
+      top: 92px;
+      z-index: 2;
+      width: 228px;
+      height: 310px;
+      transform: rotate(-5deg);
       animation-delay: -1.4s;
     }
 
     .photo-card.dacha {
-      right: 12px;
-      top: 0;
-      width: 276px;
-      height: 330px;
-      transform: rotate(7deg);
+      right: 5%;
+      top: 8px;
+      z-index: 3;
+      width: 318px;
+      height: 360px;
+      transform: rotate(5deg);
     }
 
     .photo-label {
@@ -375,30 +382,30 @@
 
     .max-badge {
       position: absolute;
-      left: 45%;
-      top: 232px;
-      z-index: 4;
+      left: 48%;
+      top: 300px;
+      z-index: 5;
       display: grid;
       place-items: center;
-      width: 112px;
-      height: 104px;
-      border-radius: 28px;
+      width: 92px;
+      height: 86px;
+      border-radius: 23px;
       color: #fff;
       background: var(--red);
       box-shadow: 0 20px 42px rgba(237, 0, 22, 0.32);
-      font-size: 28px;
+      font-size: 23px;
       font-weight: 900;
-      transform: rotate(-10deg);
+      transform: rotate(-10deg) translateX(-50%);
       animation: pop 2.6s ease-in-out infinite;
     }
 
     .score-card {
       position: absolute;
       left: 5%;
-      bottom: 58px;
+      top: 382px;
       z-index: 5;
-      width: 270px;
-      padding: 18px 20px 20px;
+      width: 218px;
+      padding: 16px 18px 18px;
       border-radius: 20px;
       color: #fff;
       background: #201c17;
@@ -417,7 +424,7 @@
 
     .score-card strong {
       display: block;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 900;
       line-height: 1.03;
     }
@@ -426,7 +433,7 @@
       display: block;
       margin-top: 9px;
       color: var(--yellow);
-      font-size: 13px;
+      font-size: 11px;
       font-style: normal;
       font-weight: 900;
       line-height: 1.12;
@@ -434,11 +441,11 @@
 
     .ticket {
       position: absolute;
-      right: 4%;
-      bottom: 52px;
+      right: 8%;
+      top: 394px;
       z-index: 4;
-      width: 230px;
-      min-height: 96px;
+      width: 198px;
+      min-height: 78px;
       display: grid;
       place-items: center;
       padding: 16px 22px;
@@ -446,7 +453,7 @@
       color: #1c1713;
       background: #ff615c;
       box-shadow: 0 20px 45px rgba(237, 0, 22, 0.23);
-      font-size: 27px;
+      font-size: 20px;
       font-weight: 900;
       line-height: 0.95;
       text-transform: uppercase;
@@ -1449,12 +1456,12 @@
       }
 
       .visual {
-        min-height: 430px;
+        min-height: 468px;
       }
 
       .photo-stack {
         top: 18px;
-        height: 286px;
+        height: 386px;
       }
 
       .photo-card {
@@ -1463,16 +1470,17 @@
       }
 
       .photo-card.city {
-        top: 76px;
-        left: -2%;
-        width: 48%;
+        top: 84px;
+        left: 1%;
+        width: 46%;
         height: 222px;
       }
 
       .photo-card.dacha {
-        right: -2%;
-        width: 59%;
-        height: 260px;
+        top: 28px;
+        right: -1%;
+        width: 61%;
+        height: 270px;
       }
 
       .floating-dash {
@@ -1486,8 +1494,8 @@
       }
 
       .max-badge {
-        top: 205px;
-        left: 42%;
+        top: 238px;
+        left: 48%;
         width: 82px;
         height: 78px;
         border-radius: 22px;
@@ -1496,7 +1504,8 @@
 
       .score-card {
         left: 0;
-        bottom: 70px;
+        top: 308px;
+        bottom: auto;
         width: 190px;
         padding: 15px 16px;
       }
@@ -1507,7 +1516,8 @@
 
       .ticket {
         right: 0;
-        bottom: 64px;
+        top: 324px;
+        bottom: auto;
         width: 172px;
         min-height: 78px;
         font-size: 20px;
@@ -1699,7 +1709,8 @@
             <span class="mini-badge">Петрович × Горбилет</span>
             <h1>
               <span class="title-line">Где лето лучше:</span>
-              <span class="title-line">в городе <span class="script-red">или</span></span>
+              <span class="title-line">в городе</span>
+              <span class="title-line title-script"><span class="script-red">или</span></span>
               <span class="title-line">на даче?</span>
             </h1>
             <p class="lead">Летом люди делятся на два типа: одни уезжают на дачу, а другие остаются в городе. Покажите, где проводите лето вы, и выигрывайте подарки от Петровича и Горбилета!</p>
