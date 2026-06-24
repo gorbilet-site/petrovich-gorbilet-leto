@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Конкурс Петрович x Горбилет: где лето лучше - в городе или на даче?">
-  <title>Где лето лучше: в городе или на даче?</title>
+  <meta name="description" content="Где лето лучше: в городе или на даче? Конкурс Петрович x Горбилет с фотоальбомом участников и летними призами.">
+  <title>Где лето лучше: в городе или на даче? · Петрович × Горбилет</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
@@ -246,12 +246,12 @@
     }
 
     .lead {
-      max-width: 455px;
+      max-width: 620px;
       margin: 22px 0 0;
       color: #34302a;
-      font-size: clamp(18px, 2vw, 24px);
+      font-size: clamp(16px, 1.25vw, 20px);
       font-weight: 900;
-      line-height: 1.24;
+      line-height: 1.23;
     }
 
     .floating-dash,
@@ -397,7 +397,7 @@
       left: 5%;
       bottom: 58px;
       z-index: 5;
-      width: 242px;
+      width: 270px;
       padding: 18px 20px 20px;
       border-radius: 20px;
       color: #fff;
@@ -420,6 +420,16 @@
       font-size: 24px;
       font-weight: 900;
       line-height: 1.03;
+    }
+
+    .score-card em {
+      display: block;
+      margin-top: 9px;
+      color: var(--yellow);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1.12;
     }
 
     .ticket {
@@ -820,8 +830,8 @@
     .promo-main::after {
       content: "";
       position: absolute;
-      right: -64px;
-      bottom: -90px;
+      right: -122px;
+      bottom: -154px;
       width: 280px;
       height: 280px;
       border-radius: 50%;
@@ -832,6 +842,22 @@
       position: relative;
       z-index: 1;
       max-width: 710px;
+    }
+
+    .promo-copy {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 18px;
+    }
+
+    .promo-copy p {
+      max-width: 640px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.36;
     }
 
     .promo-code {
@@ -857,6 +883,16 @@
       font-size: 13px;
       font-weight: 900;
       text-transform: uppercase;
+    }
+
+    .footer small {
+      display: block;
+      max-width: 620px;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.45;
+      text-transform: none;
     }
 
     @keyframes marquee {
@@ -1264,7 +1300,7 @@
         </a>
         <div class="nav-links">
           <a href="#board">Доска</a>
-          <a href="#join">Участвовать</a>
+          <a href="#how">Как участвовать</a>
           <a href="#prizes">Призы</a>
         </div>
       </nav>
@@ -1280,7 +1316,7 @@
               <span class="title-line">в городе <span class="script-red">или</span></span>
               <span class="title-line">на даче?</span>
             </h1>
-            <p class="lead">Загрузите одно фото, выберите сторону и попадите на общую доску летнего соперничества.</p>
+            <p class="lead">Летом люди делятся на два типа: одни уезжают на дачу, а другие остаются в городе. Покажите, где проводите лето вы, и выигрывайте подарки от Петровича и Горбилета!</p>
           </div>
 
           <div class="visual" aria-label="Фото конкурса">
@@ -1299,7 +1335,8 @@
               <div class="max-badge">MAX</div>
               <div class="score-card">
                 <span>счет</span>
-                <strong>город 1248 / дача 1391</strong>
+                <strong>город 1570 / дача 1438</strong>
+                <em>Сейчас лидирует Город · +132</em>
               </div>
               <div class="ticket">Культурный дачник</div>
             </div>
@@ -1307,8 +1344,8 @@
         </div>
 
         <div class="cta-panel" id="join">
-          <p>Фото на доску, кнопка в двух MAX-ботах и маленькое летнее соперничество.</p>
-          <a class="btn btn-primary" href="https://max.ru/id010511198702_bot">Участвовать</a>
+          <p>Загрузите кадр, выберите команду и подтвердите участие в двух MAX-ботах.</p>
+          <a class="btn btn-primary" href="https://max.ru/id010511198702_bot">Добавить фото</a>
           <a class="btn btn-secondary" href="#board">Доска</a>
         </div>
         <span class="season">Лето 2026</span>
@@ -1361,9 +1398,9 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Доска участников</p>
-            <h2>Смотрите, как проводят лето другие</h2>
+            <h2>Загрузите летнее фото</h2>
           </div>
-          <p>Фото крепятся на общую доску: слева команда «Город», справа команда «Дача». Карточки можно приближать в интерактивной версии.</p>
+          <p>Оно опубликуется в фотоальбоме: слева — команда «Город», справа — «Дача». Смотрите, как проводят лето другие.</p>
         </div>
 
         <div class="board" aria-label="Демонстрация доски участников">
@@ -1394,11 +1431,11 @@
           </figure>
           <div class="counter-bar" aria-label="Счетчик участников">
             <div class="counter-pill">
-              <strong>1 248</strong>
+              <strong>1 570</strong>
               <span>город</span>
             </div>
             <div class="counter-pill">
-              <strong>1 391</strong>
+              <strong>1 438</strong>
               <span>дача</span>
             </div>
           </div>
@@ -1408,36 +1445,39 @@
       <section class="section shell" id="prizes">
         <div class="promo">
           <div class="promo-main">
-            <h2>Промокод всем участникам после конкурса</h2>
-            <div class="promo-code">Культурный<br>дачник</div>
+            <div class="promo-copy">
+              <h2>Выигрывайте летние подарки</h2>
+              <p>Специальный приз достанется команде, у кого больше фото: балет в Мариинском театре или другой культурный досуг для «Города», рассада или дачные принадлежности для «Дачи».</p>
+            </div>
+            <div class="promo-code">+1<br>специальный приз</div>
           </div>
           <article class="info-card green">
-            <h3>Длительность</h3>
-            <p>Месяц живой доски, голосования сторон и новых фото каждый день.</p>
+            <h3>Секретный промокод</h3>
+            <p>Все участники конкурса получат промокод на скидки.</p>
           </article>
         </div>
 
         <div class="cards">
           <article class="info-card accent">
-            <h3>Город</h3>
+            <h3>10 сертификатов от Горбилет</h3>
             <ul>
-              <li>10 победителей получают сертификаты от Горбилета.</li>
-              <li>Если городских фото больше, добавляется культурный суперприз.</li>
+              <li>Для команды «Город».</li>
+              <li>Плюс шанс забрать культурный суперприз, если городских фото окажется больше.</li>
             </ul>
           </article>
-          <article class="info-card">
-            <h3>Как участвовать</h3>
+          <article class="info-card" id="how">
+            <h3>Как принять участие</h3>
             <ul>
-              <li>Загрузить одно фото своего лета.</li>
-              <li>Выбрать сторону: город или дача.</li>
-              <li>Нажать «Участвую» в двух MAX-ботах.</li>
+              <li>Выберите «Город» или «Дача».</li>
+              <li>Загрузите одно летнее фото.</li>
+              <li>Подпишитесь на Горбилет и Петрович в MAX.</li>
             </ul>
           </article>
           <article class="info-card green">
-            <h3>Дача</h3>
+            <h3>10 сертификатов от Петрович</h3>
             <ul>
-              <li>10 победителей получают сертификаты от Петровича.</li>
-              <li>Если дачников больше, добавляется дачный суперприз.</li>
+              <li>Для команды «Дача».</li>
+              <li>Плюс шанс забрать дачный суперприз, если дачных фото окажется больше.</li>
             </ul>
           </article>
         </div>
@@ -1445,7 +1485,8 @@
     </main>
 
     <footer class="footer shell">
-      Петрович × Горбилет · конкурсная демо-страница · лето 2026
+      Петрович × Горбилет · прототип лендинга конкурса · лето 2026<br>
+      <small>Фотографии участников проходят модерацию. Контакты не публикуются на доске и хранятся приватно.</small>
     </footer>
   </div>
 </body>
