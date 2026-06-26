@@ -476,11 +476,38 @@ h1.hh,.stats-h,.board-head h2,.prizes h2,.how-intro h2,.prize .big,.prize .ptitl
 }
 .pin .tape{background:var(--brand-red)!important}
 .marquee{
+  position:relative;
   background:var(--brand-yellow)!important;
   border-top:4px solid var(--brand-black)!important;
   border-bottom:4px solid var(--brand-black)!important;
+  box-shadow:0 18px 44px rgba(61,49,29,.08);
 }
-.mtrack{animation-duration:24s!important}
+.marquee::before,.marquee::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:clamp(42px,9vw,120px);
+  z-index:2;
+  pointer-events:none;
+}
+.marquee::before{left:0;background:linear-gradient(90deg,var(--brand-yellow),rgba(254,220,24,0))}
+.marquee::after{right:0;background:linear-gradient(270deg,var(--brand-yellow),rgba(254,220,24,0))}
+.mtrack{
+  animation-duration:18s!important;
+  gap:clamp(24px,3vw,46px)!important;
+  padding-left:clamp(24px,3vw,46px)!important;
+}
+.mitem{
+  padding:20px 0!important;
+  gap:clamp(14px,1.6vw,22px)!important;
+}
+.mitem svg{
+  height:clamp(46px,4.8vw,76px)!important;
+}
+.mitem .mw{
+  font-size:clamp(34px,4.2vw,62px)!important;
+}
 .mitem .mw.r{color:var(--brand-red)!important}
 .mitem .mw.y{color:var(--brand-black)!important}
 .prize{
